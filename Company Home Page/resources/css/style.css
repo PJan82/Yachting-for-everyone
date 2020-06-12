@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    color: black;
+    /*background-color: rgb(238, 250, 234);*/
+    text-align: center;
+}
+  
+a {
+    color: darkmagenta;
+}
+
+h1,h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+h4 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #B7B8BC;
+}
+
+b {
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.teamMember, .offers {
+    border: 5px solid rgba(250, 250, 250, .50);
+}
+  
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.offer,
+div.team,
+div.contacts  {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.ourTeam {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 30px 30px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header.flex-container, footer {
+    background-color: rgba(4, 184, 255, 0.70) ;
+}
+
+/* Header Section */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 69px;
+    background-color: #f6fffe;
+    border-bottom: 1px solid rgba(4, 184, 255, 0.85) ;
+    align-items: center;
+}
+
+#logo {
+    background-color: transparent;
+    padding-left: 10%;
+}
+
+nav {
+    text-align: right;
+    flex-grow: 1;
+}
+
+nav span {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.menu {
+    margin: auto;
+    margin-left: 10px;
+    display: none;
+}
+
+.menu img {
+    height: 30px;
+    width: 40px;
+    padding: 10px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    span a {
+        display: none;
+    }
+
+    nav .menu {
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    #contact img {
+        width: auto;
+        height: 100px;
+        margin: 20px auto;
+        flex-grow: 2;
+    }
+    
+
+    
+}
+
+/* Main Section */
+
+.main {
+    padding-top: 69px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Mission Section*/
+
+#mission {
+    min-height: 500px;
+    background-image: url("../images/milkovi-p_0tDp9zAeI-unsplash-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#mission h1 {
+    max-width: 800px;
+    font-weight: bold;
+    margin: 60px;
+}
+
+#mission .content {
+    opacity: 0.85;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+}
+
+/* offer Section */
+
+.offer {
+    height: 950px;
+    min-width: 500px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.item {
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#nightLife {
+    background-image: url("../images/chris-karidis-v1VhP3d7Rc0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+#bayFishing {
+    background-image: url("../images/jeremy-bishop-A0wvBW-Hjbs-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5; 
+}
+
+#windSurfing {
+    background-image: url("../images/joshua-chai-lu6gAGm9xYE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5; 
+}
+
+#localRestaurants {
+    background-image: url("../images/nicolas-jossi-h3ki3bbJWk0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1; 
+}
+
+#drone {
+    background-image: url("../images/oliver-sjostrom-J_dHJbNMlms-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1; 
+}
+
+#smallBoat {
+    background-image: url("../images/praveesh-palakeel-jH9ISSpUQRw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5; 
+}
+
+/* Our Team */
+
+.team {
+    background-image: url("../images/alex-lesik-WF90intuPdk-unsplash-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    min-width: 500px;
+    padding-top: 200px;
+    color: white;
+    display: flex;
+    align-items: center;
+    top: 100px;
+}
+
+.team h2 {
+    display: none;
+}
+
+.ourTeam {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teamMember {
+    opacity: 0.85;
+    width: 250px;
+    height: 500px;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+#a1 {
+    background-image: url("../images/a1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#b1 {
+    background-image: url("../images/b1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#c1 {
+    background-image: url("../images/c1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+div.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.map {
+    background-image: url(../images/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    flex-grow: 1;
+    min-width: 500px;
+    height: 500px;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.contacts #contact {
+    width: 280px;
+    margin: 20px 0;
+    flex-grow: 2;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    padding: 5px 30px;
+    border-top: 2px solid rgba(4, 184, 255, 0.85) ;
+    text-align: center;
+    padding-left: 20px;
+}
+
